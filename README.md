@@ -23,7 +23,13 @@ Open terminal
         ./search.sh
     in the terminal.
     
+    
+# Customize
 
+You can change the iteration block by modifying 
+
+        const int block=100;
+in "execute.hpp".
 
 # Results
 
