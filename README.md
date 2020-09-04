@@ -33,6 +33,9 @@ in "execute.hpp".
 
 # Results
 
+Best accuracy within 1000 generations of average of 30 runs: 0.760889
+
+Best accuracy within 1000 generations: 0.833333
 
 
 
