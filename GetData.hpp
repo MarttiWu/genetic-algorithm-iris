@@ -15,9 +15,7 @@
 
 using namespace std;
 
-//namespace Data{
 vector<vector<double> > GetIrisData();
-//}
 
 
 #endif /* GetData_hpp */
