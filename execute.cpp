@@ -9,17 +9,15 @@
 #include "execute.hpp"
 
 void execute(const int Algo,const int runs,const int generations,const string filename,const int population,const double Pm,const double Pc){
-    
     vector<vector<double> > data = GetIrisData();
-
     int x = data[0].size()-1;
     vector<double> answer(data.size(),0);
+    
     for (int i=0;i<data.size();i++){
         answer[i] = data[i][x];
         data[i].pop_back();
     }
-    
-    
+
     srand((unsigned)time(NULL));
     vector<double> avg(generations/block);
 
@@ -106,9 +104,6 @@ void execute(const int Algo,const int runs,const int generations,const string fi
         
         avg_acc/=runs;
         cout<<"average accuracy: "<<avg_acc<<endl;
-        
-        
-        
     }
     else{
         cout<<"random number file"<<endl;
